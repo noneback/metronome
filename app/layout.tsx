@@ -5,7 +5,6 @@ import './globals.css';
 const display = Bricolage_Grotesque({ variable: '--font-display', subsets: ['latin'] });
 const body = IBM_Plex_Sans({ variable: '--font-body', subsets: ['latin'] });
 const utility = IBM_Plex_Mono({ variable: '--font-utility', subsets: ['latin'], weight: ['400', '500', '600'] });
-const iconUrl = process.env.GITHUB_ACTIONS === 'true' ? '/metronome/favicon.svg' : '/favicon.svg';
 
 export const dynamic = 'force-static';
 
@@ -13,7 +12,7 @@ export const metadata: Metadata = {
   title: 'PulseCraft · 在线节拍器与经典节奏',
   description: '支持常见拍号、可读谱经典节奏、精确速度控制和轻重拍编辑的在线节拍练习台。',
   icons: {
-    icon: [{ url: iconUrl, type: 'image/svg+xml' }],
+    icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
   },
 };
 
