@@ -38,6 +38,8 @@ jobs:
         run: npm run lint
       - name: Build static site
         run: npm run build
+      - name: Prepare Pages artifact
+        run: npm run prepare:pages
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:

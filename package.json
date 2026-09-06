@@ -8,8 +8,9 @@
   "scripts": {
     "dev": "vinext dev",
     "build": "vinext build",
+    "prepare:pages": "node --experimental-strip-types scripts/prepare-pages-build.ts",
     "test": "node --experimental-strip-types --test app/*.test.ts",
-    "lint": "oxlint app",
+    "lint": "oxlint app scripts",
     "format": "oxfmt"
   },
   "dependencies": {
